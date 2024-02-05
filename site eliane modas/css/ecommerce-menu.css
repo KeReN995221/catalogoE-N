@@ -1,0 +1,29 @@
+.cat-vertical-menu { background-color: transparent;  }
+.cat-vertical-menu ul.nav-list li a { background-color: transparent; color: RGBA(148, 148, 148, 1); }
+.cat-vertical-menu ul.nav-list li a:hover, .cat-vertical-menu ul.nav-list li a:focus, .cat-vertical-menu ul.nav-list li a.active { background-color: RGBA(255, 255, 255, 1); color: RGBA(0, 0, 0, 1); }
+.cat-vertical-menu ul.nav-list.tree li a { padding-left: 30px; background-color: transparent; color: rgba(148, 148, 148, 1); }
+.cat-vertical-menu ul.nav-list.tree li a:hover, .cat-vertical-menu ul.nav-list.tree li a:focus, .cat-vertical-menu ul.nav-list.tree li a.active { background-color: RGBA(240, 240, 240, 1); color: rgba(0, 0, 0, 1); }
+
+
+.container-filter { background-color: transparent; border-color: #DDDDDD; color: #333333; }
+.container-filter ul li { color: #333333; }
+.container-filter .panel-heading { background-color: #f5f5f5; border-color: #DDDDDD;  color: #333333; }
+.container-filter .panel.panel-default { background: transparent; }
+
+.container-filter ul.nav li a { color: RGBA(148, 148, 148, 1); }
+.container-filter ul.nav li a:hover, .container-filter ul.nav li a:focus { background-color: transparent; color: rgba(0, 0, 0, 1); }
+.container-filter ul.nav li a.text-danger, 
+.container-filter ul.nav li a.text-danger:hover, 
+.container-filter ul.nav li a.text-danger:focus { color: rgba(0, 0, 0, 1); }
+
+
+.filter-item [type="checkbox"]:not(:checked),[type="checkbox"]:checked { position: absolute; opacity: 0; pointer-events: none }
+.filter-item [type="checkbox"]+span:not(.lever) { position: relative; padding-left: 35px; cursor: pointer; display: inline-block; height: 25px; line-height: 25px; font-weight: normal; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+.filter-item [type="checkbox"]+span:not(.lever):before, .filter-item [type="checkbox"]:not(.filled-in)+span:not(.lever):after {content: ''; position: absolute; top: 0; left: 0; width: 18px; height: 18px; z-index: 0; border: 2px solid #333333; border-radius: 1px; margin-top: 3px; -webkit-transition: .2s; transition: .2s}
+.filter-item [type="checkbox"]:not(.filled-in)+span:not(.lever):after {border: 0; -webkit-transform: scale(0); transform: scale(0)}
+.filter-item [type="checkbox"]:not(:checked):disabled+span:not(.lever):before {border: none; background-color: rgba(0,0,0,0.42)}
+.filter-item [type="checkbox"].tabbed:focus+span:not(.lever):after {-webkit-transform: scale(1); transform: scale(1); border: 0; border-radius: 50%; -webkit-box-shadow: 0 0 0 10px rgba(0,0,0,0.1); box-shadow: 0 0 0 10px rgba(0,0,0,0.1); background-color: rgba(0,0,0,0.1)}
+.filter-item [type="checkbox"]:checked+span:not(.lever):before {top: -4px; left: -5px; width: 12px; height: 22px; border-top: 2px solid transparent; border-left: 2px solid transparent; border-right: 2px solid rgba(0, 0, 0, 1); border-bottom: 2px solid rgba(0, 0, 0, 1); -webkit-transform: rotate(40deg); transform: rotate(40deg); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%}
+.filter-item [type="checkbox"]:checked:disabled+span:before {border-right: 2px solid rgba(0,0,0,0.42); border-bottom: 2px solid rgba(0,0,0,0.42)}
+.filter-item [type="checkbox"]:indeterminate+span:not(.lever):before {top: -11px; left: -12px; width: 10px; height: 22px; border-top: none; border-left: none; border-right: 2px solid rgba(0, 0, 0, 1); border-bottom: none; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%}
+.filter-item [type="checkbox"]:indeterminate:disabled+span:not(.lever):before {border-right: 2px solid rgba(0,0,0,0.42); background-color: transparent}

@@ -1,0 +1,2531 @@
+<!DOCTYPE html><html lang="pt" xml:lang="pt"><head>
+					<title>Catalogo</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content=""><meta name="keywords" content=""><link rel="shortcut icon" href="images/favicon.png"><link rel="icon" href="images/favicon.png">
+<!-- Estilos da página -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphicons.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/catalog.css">
+<link rel="stylesheet" type="text/css" href="css/cart.css">
+<link rel="stylesheet" type="text/css" href="css/ecommerce-catalog.css">
+<link rel="stylesheet" type="text/css" href="css/ecommerce-menu.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.swformvalidator.css">
+
+<!-- Scripts da página -->
+<script async="" src="js/fbevents.js"></script><script async="" src="js/gtm.js"></script><script async="" src="js/analytics.js"></script><script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script id="anchor_code" type="text/javascript">
+
+			$(function(){
+				$('a').on('click',function (e) {
+					if($('[id*="'+this.hash.replace('#', '')+'"]').length > 0 && (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)){
+						var target = this.hash;
+						var $target = $(target);
+
+						var verify = function(){
+							if($(target).lenght > 0 || target.indexOf("#") >= 0 && $(target).css('display') != 'none'){
+								e.preventDefault();
+									$('html, body').stop().animate({
+										'scrollTop': $(target).offset().top
+									}, 900, 'swing', function () {
+										window.location.hash = target;
+									});
+								return false;
+							}
+							else
+								return 1;
+						};
+						if($(".navbar-collapse.in") && $(".navbar-collapse.in").collapse && $(this).closest(".navbar-collapse.in") && $(this).closest(".navbar-collapse.in").length > 0){
+							$(".navbar-collapse.in").on("hidden.bs.collapse", verify);
+										$(".navbar-collapse.in").collapse("hide");
+							$(".navbar-collapse.in").off("hidden.bs.collapse", verify);
+							return false;
+						}
+						else
+							return verify();
+					}
+					});
+					});
+
+				$(".navbar-collapse.in").on("click",function(e) {
+					if( $(e.target).is("a") && $(e.target).attr("class") != "dropdown-toggle" ) {
+						$(this).collapse("hide");
+					}
+			});
+</script><script type="text/javascript">
+$(window).scroll(function(){
+  if($(window).scrollTop()<=25) $('#topofixo').removeClass('noact').addClass('act');
+  else $('#topofixo').removeClass('act').addClass('noact');
+}).trigger('scroll');
+
+$(function(){
+  $('#topofixo').find('nav').on('show.bs.collapse', function() {
+  	$('#topofixo').removeClass('act').addClass('noact');
+  });
+
+  $('#topofixo').find('nav').on('hide.bs.collapse', function(){
+      if($(window).scrollTop() <= 25)
+      $('#topofixo').removeClass('noact').addClass('act');
+  });
+});
+
+</script><script type="text/javascript" src="js/ShoppingCart.js"></script>
+<script type="text/javascript">
+
+			$(function(){
+				$('form#Newsletter-hk2yils5dw').on('submit', function(){
+					if (!$('form#Newsletter-hk2yils5dw input#email_newsletter').val().trim()){
+						alert('Campo Email com valor inválido!');
+						$('form#Newsletter-hk2yils5dw input#email_newsletter').focus();
+						return false;
+					}
+					if($('form#Newsletter-hk2yils5dw input#nome_newsletter').length > 0 && !$('form#Newsletter-hk2yils5dw input#nome_newsletter').val().trim()){
+						alert('Campo Nome com valor inválido!');
+						$('form#Newsletter-hk2yils5dw input#nome_newsletter').focus();
+						return false;
+					}
+					return true;
+				});
+			});
+		
+</script><script type="text/javascript" src="js/jquery.swformvalidator.js"></script>
+<script type="text/javascript">
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("iconwhat").style.right = "10px";
+  } else {
+    document.getElementById("iconwhat").style.right = "-185px";
+  }
+}
+</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-62859019-1', 'auto');ga('send', 'pageview');</script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-5D6LHTM");</script><!-- End Google Tag Manager --><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '428325055090501'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=428325055090501&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+  <!-- Global site tag (gtag.js) - Google Ads: 719763891 --> 
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-719763891"></script> 
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-719763891'); </script></head>
+				<body><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D6LHTM"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><div id="page_655c9649db1fe"><div class="container-fluid" name="" id="Header-hk2yilrelq"><style type="text/css">h1, h2, h3, h4, h5, h6 {font-family: filosofia-grand, serif;}
+
+body{font-family:  mr-eaves-modern, sans-serif;
+font-weight: 300;}
+
+@media (max-width: 767px) {
+.navbar-nav .open .dropdown-menu {
+  position: relative !important;}}
+
+
+/*MENU*/
+.menu_item {
+  letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu_item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .3s;
+}
+.menu_item:hover::after {
+    width: 100%;
+}
+
+#_5e43528b980e6_1581470347>div>ul>li:nth-of-type(3) .menu_item {
+  border: 1px solid #f6c582;
+}
+
+.navbar-toggle {
+    float: right;
+    border: 0px;
+  border-radius: 0px;
+background-color: transparent;}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent !important;
+  border-radius: 0;}
+
+.navbar-nav>li>a {
+    padding-top: 10px !important;
+  padding-bottom: 10px !important;}
+
+.navbar-default .navbar-toggle .icon-bar{
+	border-color: white !important;}
+
+
+/*DISPLAYS*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;}
+
+.cover {
+  background-size: cover;}
+
+.contain {
+  background-size: contain;}
+
+@media (min-width: 992px) {.meia-largura-esq {
+  width: 485px;
+  margin: 0 0 0 auto;}}
+
+@media (min-width: 1170px) {.meia-largura-esq {
+  width: 640px;
+  margin: 0 0 0 auto;}}
+
+@media (min-width: 992px) {.meia-largura-dir {
+  width: 485px;
+  margin: 0 auto 0 0;}}
+
+@media (min-width: 1170px) {.meia-largura-dir {
+  width: 585px;
+  margin: 0 auto 0 0;}}
+
+@media (max-width: 767px) {.m40{
+  font-size: 40px !important;}}
+
+@media (min-width: 1400px) {.container {
+    width: 1370px;
+  }}
+
+@media (min-width: 1700px) {.container {
+    width: 1670px;
+  }}
+
+
+/*BOTOES*/
+.btn, .btn:hover, a, a:hover {
+  transition: .8s;}
+
+.botaoc .btn {
+  margin: 0 auto;
+  display: table;
+  float: none;}
+
+.botao1 .btn {
+  color: white;
+  width: auto;
+  white-space: pre-wrap;
+  height: auto;
+  background-color: transparent;
+  border-color: white;
+letter-spacing: 3px;}
+
+.botao1 .btn:hover {
+color: #ffffff94;}
+
+.botao2 .btn {
+  color: black;
+  width: auto;
+  white-space: pre-wrap;
+  height: auto;
+  background-color: transparent;
+  border-color: black;
+letter-spacing: 3px;}
+
+.botao2 .btn:hover {
+color: #00000082;}
+
+/*DELAY*/
+.delay1 {
+  animation-delay: .5s;}
+
+.delay2 {
+  animation-delay: 1s;}
+
+.delay3 {
+  animation-delay:1.5s;}
+
+.delay4 {
+  animation-delay: 2s;}
+
+.delay5 {
+  animation-delay: 2.5s;}
+
+@media (max-width: 767px) {.m35 {
+  font-size: 35px !important;}
+.m52 {
+  font-size: 52px !important;}
+.m20 {
+  font-size: 20px !important;}
+}</style><link rel="stylesheet" href="css/qfj4qkn.css">
+  
+  <script src="js/b2fa1b8775.js" crossorigin="anonymous"></script>
+  
+ 
+
+  
+  	<meta property="og:type" content="website">
+	<meta property="og:description" content="SY2TD - Luxury Dresses @ Florianópolis">
+	<meta property="og:image" content="images/LETICIA-VESTIDO-LONGO-FENDA-JOVANI-FRENTE2.jpg">
+	<meta property="og:url" content="https://2thedress.com.br">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+	<meta itemprop="name" content="SY2TD - Luxury Dresses @ Florianópolis">
+	<meta itemprop="description" content="SY2TD - Luxury Dresses @ Florianópolis">
+	<meta itemprop="image" content="https://2thedress.com.br/images/categorias/LETICIA-VESTIDO-LONGO-FENDA-JOVANI-FRENTE2.jpg">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://2thedress.com.br">
+	<meta name="twitter:title" content="Say Yes 2 the Dress">
+	<meta name="twitter:description" content="SY2TD - Luxury Dresses @ Florianópolis">
+	<meta name="twitter:image" content="https://2thedress.com.br/images/categorias/LETICIA-VESTIDO-LONGO-FENDA-JOVANI-FRENTE2.jpg">
+	<meta name="twitter:creator" content="">
+	<meta name="author" content=""><style type="text/css">#topofixo{
+	position: fixed;
+  	z-index: 100;
+}
+
+.act {
+	border: 0;
+    background-color: white;
+}
+
+.noact {
+  	top: 0;
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.act, .noact{
+  transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+}
+
+#logo img {filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.2));}</style><div class="container-fluid  act" name="Container_655c964a1e52a" id="topofixo"><div class="container  flex" name="Container_655c964a1e64d" id="_5e43247e007f2_1581458558"><div class=" col-xs-8 col-sm-6 col-md-4 col-xs-offset-0 col-sm-offset-3 col-md-offset-0" id="logo"><a id="ResponsiveImage-hk2yilrglq" class="col-xs-12 col-sm-12 col-md-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" href="https://2thedress.com.br/index" target="_self"><img class="col-md-12 col-sm-12 col-xs-12 col-lg-12" src="images/logo-branco.png" alt=""></a><div class="clear"></div></div><div class=" flex col-xs-12 col-sm-12 col-md-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_479385961_1581470319"><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_5fda696756ad0_1608149351"><nav class="navbar navbar-default menu " id="_5e43528b980e6_1581470347">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-_5e43528b980e6_1581470347" aria-expanded="false" aria-controls="menu-_5e43528b980e6_1581470347">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar">�&nbsp;</span>
+					<span class="icon-bar">�&nbsp;</span>
+					<span class="icon-bar">�&nbsp;</span>
+				</button>
+			</div>
+			
+			<div id="menu-_5e43528b980e6_1581470347" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li role="presentation" id="menuitem_655c964a1f3a8"><a class=" menu_item  " href="https://2thedress.com.br/sobre" target="_self">SOBRE</a></li><li role="presentation" id="menuitem_655c964a1f470"><a class=" menu_item  dropdown-toggle  " href="/" target="_self" data-toggle="dropdown" role="button" aria-expanded="false">ALUGUE +</a><ul class="dropdown-menu dropdown-toggle" role="menu"><style type="text/css">.dropdown-menu{    background-color: white !important;
+  border-radius: 0px;
+min-width: 300px;}
+
+.dropdown-menu .menu_item {
+  color: black !important;
+  padding: 15px !important;
+line-height: 1;
+white-space: nowrap;}
+
+.bloco .menu_item{
+  padding: 5px 15px !important;
+background-color: white;}</style><li role="presentation" id="menuitem_655c964a1f635" class="active"><a class=" menu_item  focus" href="https://2thedress.com.br/catalog" target="_self">TODOS OS MODELOS</a></li><div class=" bloco col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_5e436e724cf88_1581477490"><div id="text_655c964a1f81d" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="line-height: 1; font-size: 9pt; letter-spacing: 3px;"><strong>POR CATEGORIA</strong></span></p></div><li role="presentation" id="menuitem_655c964a1f8db"><a class=" menu_item  " href="https://2thedress.com.br/catalog/vestido+longo.2.html" target="_self">VESTIDO LONGO</a></li><li role="presentation" id="menuitem_655c964a1f9c3"><a class=" menu_item  " href="https://2thedress.com.br/catalog/vestido+curto.1.html" target="_self">VESTIDO CURTO</a></li><li role="presentation" id="menuitem_655c964a1faa0"><a class=" menu_item  " href="https://2thedress.com.br/catalog/vestido+midi.3.html" target="_self">VESTIDO MIDI</a></li><li role="presentation" id="menuitem_655c964a1fb5c"><a class=" menu_item  " href="https://2thedress.com.br/catalog/bazar.4.html" target="_self">BAZAR</a></li><div class="clear"></div></div><div class=" bloco col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_6910222698_1581478493"><div id="text_655c964a1fcfb" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="line-height: 1; font-size: 9pt; letter-spacing: 3px;"><strong>POR�&nbsp;OCASIÃO</strong></span></p></div><li role="presentation" id="menuitem_655c964a1fdc6"><a class=" menu_item  " href="https://2thedress.com.br/catalog?_f=WyI1Il0%3D" target="_self">MADRINHA</a></li><li role="presentation" id="menuitem_655c964a1ff01"><a class=" menu_item  " href="https://2thedress.com.br/catalog?_f=WyI0Il0%3D" target="_self">FORMANDA</a></li><li role="presentation" id="menuitem_655c964a2002b"><a class=" menu_item  " href="https://2thedress.com.br/catalog?_f=WyI2Il0%3D" target="_self">FESTAS</a></li><li role="presentation" id="menuitem_655c964a20100"><a class=" menu_item  " href="https://2thedress.com.br/catalog?f=WyIxMyJd" target="_self">NOVIDADES</a></li><div class="clear"></div></div></ul></li><li role="presentation" id="menuitem_655c964a2028f"><a class=" menu_item  " href="https://2thedress.com.br/agende" target="_self">AGENDE SEU HORÁRIO</a></li><li role="presentation" id="menuitem_655c964a20357"><a class=" menu_item  " href="https://2thedress.com.br/blog" target="_self">BLOG</a></li><li role="presentation" id="menuitem_655c964a204db"><a class=" menu_item  " href="#" data-target="#_5e4353af998b5_1581470639" data-toggle="modal"><i class="fas fa-search"></i></a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		
+		</nav><div class="clear"></div></div><div class="clear"></div></div><style type="text/css">.header-mini-cart h3 i{
+  display: none;}
+
+.header-mini-cart h3{
+  margin-top: 10px !important;
+    margin-bottom: 8px !important;
+font-size: 20px !important;
+font-family: mr-eaves-modern, sans-serif !important;
+  line-height: 1;
+}
+
+.header-mini-cart>h3, .header-mini-cart>a, .header-mini-cart>p{
+  color: white;}
+
+.header-mini-cart .btn-show-cart {
+  font-size: 20px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;}
+
+.header-mini-cart a{
+  color: white;}
+
+.header-mini-cart a:hover{
+  color: #ffffffd6;
+text-decoration: none;}
+
+.header-mini-cart p{    margin-top: 5px !important;}</style><div class="clear"></div></div><div class="clear"></div></div><div class="modal fade" tabindex="-1" role="dialog" id="_5e4353af998b5_1581470639">
+			<div class="modal-dialog modal-lg " role="document">
+				<div class="modal-content"><div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title">O QUE VOCÊ PROCURA?</h4>
+					</div><div class="modal-body">
+						<div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_5e4324a52ab18_1581458597"><style type="text/css">.form-catalog-search {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 0px;
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-catalog-search input[type=text] {
+    width: calc(100% - 42px);
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: #666;
+}
+
+.form-catalog-search button {
+    color: #000;
+}
+
+.modal-title {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 27px;
+    padding: 20px 5px;
+}
+
+.modal-content {
+  border-radius: 0px;}
+
+input[type="text"]:focus {
+    outline: unset;
+}
+
+.modal.fade.in {display: inline-grid !important;
+    flex-wrap: wrap;
+    align-items: center;
+}</style><form method="get" action="https://2thedress.com.br/catalog/" class="form-catalog-search"> 
+	<input type="text" name="_search" value="" placeholder="Busca">                      
+		<button type="submit">
+			<i class="fa fa-search"></i>
+		</button>
+ 	<div class="clear"></div>
+</form><div class="clear"></div></div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><style type="text/css">
+ul.dropdown-menu > li >.dropdown-menu {
+  margin-top: 0 !important;}
+
+.navbar-toggle {
+    float: right;
+    border: 0px;
+border-radius: 0px !important;}
+
+
+/*selecao texto*/
+::selection {
+  background: black; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: black; /* Gecko Browsers */
+    color: white;
+}
+
+.animated {
+  z-index: 99 !important;}
+
+.mini-cart-content {
+    padding: 15px 15px 15px 15px !important;
+  box-shadow: none !important;}
+
+.mini-cart-content h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.shopping-cart .container-fluid .header {
+  margin-bottom: 10px;}
+
+.shopping-cart .btn-primary {
+    color: #3e3e3e !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-color: #777 !important;
+  border-radius: 0 !important;
+}
+
+.btn{border-radius: 0px !important;}
+
+.product .remove-product {
+    padding: 10px 12px !important;
+  border-radius: 0 !important;}
+
+.shopping-cart>.product {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+}
+
+.shopping-cart .product_title {font-weight: 700;}
+
+.shopping-cart .header > label {
+    color: #717171 !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+  text-transform: uppercase !important;}
+
+.checkout, .btn-success {
+border-radius: 0 !important;
+  background-color: #64af84 !important;}
+
+.checkout:hover, .btn-success:hover {
+    box-shadow: none !important;
+  background-color: #72c395 !important;}
+
+.container-customer h3 {margin-bottom: 30px;}</style></div><div class="container-fluid  container_body" name="" id="GridPanel_655c964a213ab"><div class="container " name="Container_655c964a214c2" id="_130970241_1584043843"><div class="clear"></div></div><div class="container " name="Container_655c964a215d9" id="_6197641676_1584043847"><div class=" botao2 col-xs-5 hidden-sm hidden-md hidden-lg col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_206993630_1608234849"><a id="_3882343232_1608234849" href="#" data-target="#_5416093936_1608234884" data-toggle="modal" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 btn"><i class="fa "></i>�&nbsp;FILTRAR</a><div class="clear"></div></div><div class=" ordenarsmart col-xs-7 hidden-sm hidden-md hidden-lg col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_1284148714_1608234855">
+			<div class="form-group col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="form_group-CatalogOrder_655c964a21d73">
+                <label for="ORDENAR POR">ORDENAR POR</label>     
+                <select class="form-control " id="CatalogOrder_655c964a21d73" name="ORDENAR POR" onchange="window.location.href = this.value;">
+					<option value="?">-</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=price_asc">Menor Preço</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=price_desc">Maior Preço</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=a_z">A - Z</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=z_a">Z - A</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=popular_desc">Mais Populares</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=popular_asc">Menos Populares</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=featured">Novidades primeiro</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=recents" selected="">Mais Recentes</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=olders">Mais Antigos</option>
+                </select>
+			</div>
+        <div class="clear"></div></div><div class=" col-xs-12 col-sm-9 col-md-9 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3457887559_1584043936"><div id="Catalog-hk2yilrrgk" class="container-catalog panel panel-default">
+                                <div class="panel-heading">
+                    <h1 class="category-title panel-title">Catalogo</h1>
+                </div>
+                <div class="panel-body">
+                                    <div class="product-list ">
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/camille.qo.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5202.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">CAMILLE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.200,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/sharon.qn.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5234.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">SHARON</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.970,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/constance-prata.qm.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5752.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">CONSTANCE PRATA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.970,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/marilyn.ql.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5888.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">MARILYN </h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.890,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/leslie.qk.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5580.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">LESLIE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.190,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/maeve-prata.qj.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/7127.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">MAEVE PRATA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.970,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/alanis.qi.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5410.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">ALANIS</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.970,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/laura.qh.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6156.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">LAURA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.980,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/heloise.qg.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5845.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">HELOISE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.790,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/liz-dourado.qf.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5117.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">LIZ DOURADO</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.890,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/sophie-dourado.qe.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6411SUBS.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">SOPHIE DOURADO</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.890,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/pierre.qd.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5728.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">PIERRE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.100,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/fabiola.qc.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5936.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">FABIOLA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.190,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/suelen-lavanda.qb.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6915.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">SUELEN  LAVANDA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 690,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/adriana-lima-lavanda.qa.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6428.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">ADRIANA LIMA LAVANDA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.490,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/cristele.q9.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5345.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">CRISTELE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.780,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/debora.q7.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6058.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">DEBORA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.590,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/valentina.q6.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6879.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">VALENTINA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.890,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/stardust-barbie.q5.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6713.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">STARDUST BARBIE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.490,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/dream.q4.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5293.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">DREAM</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 2.490,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/malaine.q3.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5509.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">MALAINE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.980,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/aurien-rose.q2.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/5979.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">AURIEN ROSE</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 1.980,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/rebeca-laranja.q1.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6777.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">REBECA LARANJA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 890,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                                        <div class="product-item col-xs-12 col-sm-6 col-md-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0">
+                                    <a id="ProductLink-hk2yilrrtz" class="" href="/product/catarina-laranja.q0.html"><div class=" produtos col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3510155794_1584043937"><div class=" imagemprod col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3079821536_1584043937">
+                        <img src="images/6696.w_600.h_600.jpg" id="ProductImage-hk2yilrsl9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 thumb">
+        <style type="text/css">.imagemprod >img{
+  object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  left: 0;}
+
+.imagemprod {
+  position: relative;}
+
+.imagemprod::after {
+    content: "";
+    display: block;
+  padding-bottom: 150%;}</style><div class="clear"></div></div><h2 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 name" id="ProductTitle-hk2yilrt5g">CATARINA LARANJA</h2>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 price" id="ProductPrice-hk2yilrtgu">
+        
+                                    �&nbsp;R$ 990,00                            
+            </h4>
+                <div class="clear"></div></div></a>
+                                </div>
+                                            </div>
+                                            
+                        <div class="clear"></div>
+                        <div class="col-md-12">
+                                                        <div class="col-md-6">
+                                    <ul class="pagination">
+                                        <li class="prev"><span>Anterior</span></li><li class="pag ativo"><span>1</span></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=2" title="Ir para Página: 2">2</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=3" title="Ir para Página: 3">3</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=4" title="Ir para Página: 4">4</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=5" title="Ir para Página: 5">5</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=6" title="Ir para Página: 6">6</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=7" title="Ir para Página: 7">7</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=8" title="Ir para Página: 8">8</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=9" title="Ir para Página: 9">9</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=10" title="Ir para Página: 10">10</a></li><li class="pag"><a href="/catalog?_82634776_1584043936_page=11" title="Próximas 10 páginas" onmouseover="window.status='Próximas 10 páginas';return true" onmouseout="window.status='';return true" class="paginacao">Próximas 10 páginas</a></li><li class="next"><a href="/catalog?_82634776_1584043936_page=2">Próxima</a></li>                                    </ul>
+                                </div>
+                                <div class="col-md-6"> 1 até 24 de 507 registros.</div>
+                                                    </div>
+                                </div>
+                <div class="clear"></div>
+        </div><div class="clear"></div></div><div class=" hidden-xs col-sm-3 col-md-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-0" id="_2790868471_1584043936"><div class=" ordenar col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_1940663818_1584043936"><div id="text_655c964a22de6" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #000000;"><strong><span style="font-size: 9pt; letter-spacing: 4px;">ORDENAR POR</span></strong></span></p></div>
+			<div class="form-group col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="form_group-CatalogOrder_655c964a22eeb">
+                     
+                <select class="form-control " id="CatalogOrder_655c964a22eeb" name="Catalogo - Ordenação" onchange="window.location.href = this.value;">
+					<option value="?">-</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=price_asc">Menor Preço</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=price_desc">Maior Preço</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=a_z">A - Z</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=z_a">Z - A</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=popular_desc">Mais Populares</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=popular_asc">Menos Populares</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=featured">Novidades primeiro</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=recents" selected="">Mais Recentes</option>
+<option value="http://2thedress.com.br/catalog?_orderBy=olders">Mais Antigos</option>
+                </select>
+			</div>
+        <div class="clear"></div></div><div class=" categorias col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3225027459_1584043936"><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_255123294_1584043937"><div id="text_655c964a2319d" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #000000;"><strong><span style="font-size: 9pt; letter-spacing: 4px;">CATEGORIAS</span></strong></span></p></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_1811405143_1584043937">
+            <nav class="navbar navbar-default col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 cat-vertical-menu" id="CatalogMenu_655c964a234a3">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#CatalogMenu_655c964a234a3_nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse " id="CatalogMenu_655c964a234a3_nav">
+                    <ul class="nav nav-list">
+                                                                        <li>
+                                                <a href="/catalog/vestido-longo.2.html" title="Vestido Longo" class="">
+                                                    Vestido Longo                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/vestido-curto.1.html" title="Vestido Curto" class="">
+                                                    Vestido Curto                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/vestido-midi.3.html" title="Vestido Midi" class="">
+                                                    Vestido Midi                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/bazar.4.html" title="Bazar" class="">
+                                                    Bazar                                                </a>
+                                            </li>
+                                                                                    </ul>
+                    <script type="text/javascript">
+                        $(function(){
+                            $("#CatalogMenu_655c964a234a3 a").closest(".menu-category-item").children("ul.tree").hide();
+                            $("#CatalogMenu_655c964a234a3 a.active").closest(".menu-category-item").children("ul.tree").show();
+                        });
+                    </script>
+                </div>
+            </nav><div class="clear"></div></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_531528554_1584043936"><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_2120891305_1584043937"><div id="text_655c964a2375b" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 9pt; color: #000000;"><strong><span style="letter-spacing: 4px;">FILTROS</span></strong></span></p></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_797009792_1584043937"><div class="container-filter  container-fluid" id="CatalogFilter_655c964a23a4d_nav">
+				<ul class="nav">
+								<li>Tamanho</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-9">
+								<a href="https://2thedress.com.br/catalog?_f=WyI5Il0%3D">
+									<input type="checkbox" id="filter-9">
+									<span>34</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-8">
+								<a href="https://2thedress.com.br/catalog?_f=WyI4Il0%3D">
+									<input type="checkbox" id="filter-8">
+									<span>36</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-3">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzIl0%3D">
+									<input type="checkbox" id="filter-3">
+									<span>38</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-1">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxIl0%3D">
+									<input type="checkbox" id="filter-1">
+									<span>40</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-2">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyIl0%3D">
+									<input type="checkbox" id="filter-2">
+									<span>42</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-32">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMiJd">
+									<input type="checkbox" id="filter-32">
+									<span>44</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-57">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NyJd">
+									<input type="checkbox" id="filter-57">
+									<span>46</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-61">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MSJd">
+									<input type="checkbox" id="filter-61">
+									<span>M</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-60">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MCJd">
+									<input type="checkbox" id="filter-60">
+									<span>P</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Ocasião</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-36">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNiJd">
+									<input type="checkbox" id="filter-36">
+									<span>Batizados</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-39">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzOSJd">
+									<input type="checkbox" id="filter-39">
+									<span>Casamentos Civil</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-43">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MyJd">
+									<input type="checkbox" id="filter-43">
+									<span>Casamentos Diurno</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-45">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NSJd">
+									<input type="checkbox" id="filter-45">
+									<span>Casamentos na Cidade</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-38">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzOCJd">
+									<input type="checkbox" id="filter-38">
+									<span>Casamentos na Praia</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-44">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NCJd">
+									<input type="checkbox" id="filter-44">
+									<span>Casamentos no Campo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-31">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMSJd">
+									<input type="checkbox" id="filter-31">
+									<span>Convidadas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-55">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NSJd">
+									<input type="checkbox" id="filter-55">
+									<span>Debutantes</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-7">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3Il0%3D">
+									<input type="checkbox" id="filter-7">
+									<span>Eventos de Gala</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-42">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MiJd">
+									<input type="checkbox" id="filter-42">
+									<span>Festa Corporativa</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-6">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2Il0%3D">
+									<input type="checkbox" id="filter-6">
+									<span>Festas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-4">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0Il0%3D">
+									<input type="checkbox" id="filter-4">
+									<span>Formandas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-37">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNyJd">
+									<input type="checkbox" id="filter-37">
+									<span>Grávidas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-5">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1Il0%3D">
+									<input type="checkbox" id="filter-5">
+									<span>Madrinhas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-40">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MCJd">
+									<input type="checkbox" id="filter-40">
+									<span>Madrinhas Campo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-41">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MSJd">
+									<input type="checkbox" id="filter-41">
+									<span>Madrinhas Praia</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-34">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNCJd">
+									<input type="checkbox" id="filter-34">
+									<span>Mães de Formando(a)</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-33">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMyJd">
+									<input type="checkbox" id="filter-33">
+									<span>Mães de Noivo(a)</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-63">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MyJd">
+									<input type="checkbox" id="filter-63">
+									<span>Missa de formatura</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-58">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1OCJd">
+									<input type="checkbox" id="filter-58">
+									<span>Noivas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-62">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MiJd">
+									<input type="checkbox" id="filter-62">
+									<span>Pré-wedding</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-35">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNSJd">
+									<input type="checkbox" id="filter-35">
+									<span>Reveillon</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Novidades</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-13">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxMyJd">
+									<input type="checkbox" id="filter-13">
+									<span>Novidades</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Cor</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-68">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2OCJd">
+									<input type="checkbox" id="filter-68">
+									<span>Amarelo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-16">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNiJd">
+									<input type="checkbox" id="filter-16">
+									<span>Azul</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-50">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MCJd">
+									<input type="checkbox" id="filter-50">
+									<span>Azul Marinho</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-69">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2OSJd">
+									<input type="checkbox" id="filter-69">
+									<span>Azul Royal</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-52">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MiJd">
+									<input type="checkbox" id="filter-52">
+									<span>Azul Serenity</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-66">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NiJd">
+									<input type="checkbox" id="filter-66">
+									<span>Azul Tiffany</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-15">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNSJd">
+									<input type="checkbox" id="filter-15">
+									<span>Branco</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-74">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3NCJd">
+									<input type="checkbox" id="filter-74">
+									<span>Candy color</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-19">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxOSJd">
+									<input type="checkbox" id="filter-19">
+									<span>Chumbo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-20">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMCJd">
+									<input type="checkbox" id="filter-20">
+									<span>Cinza</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-51">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MSJd">
+									<input type="checkbox" id="filter-51">
+									<span>Coral</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-21">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMSJd">
+									<input type="checkbox" id="filter-21">
+									<span>Dourado</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-53">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MyJd">
+									<input type="checkbox" id="filter-53">
+									<span>Estampado</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-65">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NSJd">
+									<input type="checkbox" id="filter-65">
+									<span>Fúcsia </span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-22">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMiJd">
+									<input type="checkbox" id="filter-22">
+									<span>Laranja</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-67">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NyJd">
+									<input type="checkbox" id="filter-67">
+									<span>Lavanda </span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-54">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NCJd">
+									<input type="checkbox" id="filter-54">
+									<span>Lilás</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-23">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMyJd">
+									<input type="checkbox" id="filter-23">
+									<span>Marrom</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-24">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNCJd">
+									<input type="checkbox" id="filter-24">
+									<span>Marsala</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-25">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNSJd">
+									<input type="checkbox" id="filter-25">
+									<span>Nude</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-26">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNiJd">
+									<input type="checkbox" id="filter-26">
+									<span>Off-White</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-27">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNyJd">
+									<input type="checkbox" id="filter-27">
+									<span>Prata</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-14">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNCJd">
+									<input type="checkbox" id="filter-14">
+									<span>Preto</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-73">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MyJd">
+									<input type="checkbox" id="filter-73">
+									<span>Rosa Chiclete</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-56">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NiJd">
+									<input type="checkbox" id="filter-56">
+									<span>Rosa Pink</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-17">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNyJd">
+									<input type="checkbox" id="filter-17">
+									<span>Rosê</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-28">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyOCJd">
+									<input type="checkbox" id="filter-28">
+									<span>Roxo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-59">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1OSJd">
+									<input type="checkbox" id="filter-59">
+									<span>Terracota</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-29">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyOSJd">
+									<input type="checkbox" id="filter-29">
+									<span>Verde</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-72">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MiJd">
+									<input type="checkbox" id="filter-72">
+									<span>Verde bandeira</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-71">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MSJd">
+									<input type="checkbox" id="filter-71">
+									<span>Verde menta</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-70">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MCJd">
+									<input type="checkbox" id="filter-70">
+									<span>Verde oliva</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-30">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMCJd">
+									<input type="checkbox" id="filter-30">
+									<span>Vermelho</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Manga</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-46">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NiJd">
+									<input type="checkbox" id="filter-46">
+									<span>Manga curta</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-47">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NyJd">
+									<input type="checkbox" id="filter-47">
+									<span>Manga longa</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-49">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0OSJd">
+									<input type="checkbox" id="filter-49">
+									<span>Ombro a ombro</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-48">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0OCJd">
+									<input type="checkbox" id="filter-48">
+									<span>Sem manga</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+							</ul>
+			</div><div class="clear"></div></div><div class="clear"></div></div><div id="text_655c964a23b1d" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p style="text-align: left;"><span style="font-size: 10pt; color: #999999;"><a style="color: #999999;" href="https://2thedress.com.br/catalog">× Limpar todos os filtros</a></span></p></div><div class="clear"></div></div><style type="text/css">.container-catalog.panel-default .panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.container-catalog .product-item .name {
+       font-size: 18px !important;
+  font-family: mr-eaves-modern, sans-serif;
+  letter-spacing: 2px;
+}
+
+.container-catalog .product-item .price {
+  font-weight: light !important;
+       font-size: 14px;
+font-family: mr-eaves-modern, sans-serif;}
+
+.panel-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.panel-default {
+ border: none;
+}
+
+.produtos .form-control {
+  height: auto;}
+
+.produtos .btn:hover{
+  background-color: #ee907b !important;
+transition: .8s;}
+
+.produtos .btn{
+transition: .8s;
+white-space: pre-wrap;}
+
+.produtos:hover{
+transition: .8s;
+transition-timing-function: ease-in;}
+
+.produtos{
+  transition: .8s;
+transition-timing-function: ease-out;}
+
+.ordenar .form-control {
+ border-radius: 0 !important;
+border-color: #7a7a7a;}
+
+.ordenar .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.categorias .navbar-toggle .icon-bar {
+  border: 1px solid #1a1a1a;}
+
+.filter-item [type="checkbox"]+span:not(.lever):before, .filter-item [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    border: 1px solid #4a4a4a;
+  border-radius: 0;}
+
+.panel-body>ul>li {
+    padding-top: 10px;
+    padding-bottom: 2px;
+      text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.product-item:hover img{transform: scale(1.1);
+  transition: 1s ease-out;}
+
+.product-item img{transition: 0.8s ease-out;}
+
+.imagemprod {overflow: hidden;}
+
+.container-filter>ul>li {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 7px;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+#_2790868471_1584043936, .ordenar option, .ordenar .form-control{
+    font-size: 15px;
+    letter-spacing: 1px;
+}</style><style type="text/css">.ordenarsmart>div {
+display: flex;
+  flex-wrap: nowrap;}
+
+.ordenarsmart .form-group > label {
+    color: RGBA(46, 46, 46, 1)!important;
+  padding: 5px 8px 0 0;}
+
+.ordenarsmart .form-control {border-radius: 0px !important;
+border-color: #383838;
+height: auto;}
+
+#filtros_modal .form-catalog-search input[type=text] {
+    width: calc(100% - 40px);
+  margin: 0 0 0 0px;
+font-size: 15px;}
+
+#filtros_modal .form-catalog-search {
+    border: 0 !important;
+    border-top: 1px solid #333333 !important;
+  border-radius: 0px !important;}
+
+#filtros_modal .form-catalog-search button{
+      font-size: 14px;
+  color: #292727;}
+
+#filtros_modal .cat-vertical-menu .navbar-header {
+	display: none !important;
+}
+
+#filtros_modal .cat-vertical-menu .collapse {
+	display: block !important;
+}
+</style><div class="clear"></div></div><div class="modal fade" tabindex="-1" role="dialog" id="_5416093936_1608234884">
+			<div class="modal-dialog modal-lg " role="document">
+				<div class="modal-content"><div class="modal-body">
+						<div class=" flex col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="filtros_modal"><div id="text_655c964a24220" class="col-xs-10 col-sm-10 col-md-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #333333;"><strong><span style="font-size: 20px; letter-spacing: 3px;">FILTRE SUA BUSCA</span></strong></span></p></div><div class=" col-xs-2 col-sm-2 col-md-2 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_5598954731_1608234884"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><div class="clear"></div></div><div class=" categorias col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_69011534_1608234976"><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_557685963_1608234976"><div id="text_655c964a24680" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #000000;"><strong><span style="font-size: 9pt; letter-spacing: 4px;">CATEGORIAS</span></strong></span></p></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_859827815_1608234976">
+            <nav class="navbar navbar-default col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 cat-vertical-menu" id="CatalogMenu_655c964a24916">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#CatalogMenu_655c964a24916_nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse " id="CatalogMenu_655c964a24916_nav">
+                    <ul class="nav nav-list">
+                                                                        <li>
+                                                <a href="/catalog/vestido-longo.2.html" title="Vestido Longo" class="">
+                                                    Vestido Longo                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/vestido-curto.1.html" title="Vestido Curto" class="">
+                                                    Vestido Curto                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/vestido-midi.3.html" title="Vestido Midi" class="">
+                                                    Vestido Midi                                                </a>
+                                            </li>
+                                                                                                            <li>
+                                                <a href="/catalog/bazar.4.html" title="Bazar" class="">
+                                                    Bazar                                                </a>
+                                            </li>
+                                                                                    </ul>
+                    <script type="text/javascript">
+                        $(function(){
+                            $("#CatalogMenu_655c964a24916 a").closest(".menu-category-item").children("ul.tree").hide();
+                            $("#CatalogMenu_655c964a24916 a.active").closest(".menu-category-item").children("ul.tree").show();
+                        });
+                    </script>
+                </div>
+            </nav><div class="clear"></div></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_627523545_1608237295"><div id="text_655c964a24bc5" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #000000;"><strong><span style="font-size: 9pt; letter-spacing: 4px;">FILTROS</span></strong></span></p></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3967170025_1608234884"><div class="container-filter  container-fluid" id="CatalogFilter_655c964a24e81_nav">
+				<ul class="nav">
+								<li>Tamanho</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-9">
+								<a href="https://2thedress.com.br/catalog?_f=WyI5Il0%3D">
+									<input type="checkbox" id="filter-9">
+									<span>34</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-8">
+								<a href="https://2thedress.com.br/catalog?_f=WyI4Il0%3D">
+									<input type="checkbox" id="filter-8">
+									<span>36</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-3">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzIl0%3D">
+									<input type="checkbox" id="filter-3">
+									<span>38</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-1">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxIl0%3D">
+									<input type="checkbox" id="filter-1">
+									<span>40</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-2">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyIl0%3D">
+									<input type="checkbox" id="filter-2">
+									<span>42</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-32">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMiJd">
+									<input type="checkbox" id="filter-32">
+									<span>44</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-57">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NyJd">
+									<input type="checkbox" id="filter-57">
+									<span>46</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-61">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MSJd">
+									<input type="checkbox" id="filter-61">
+									<span>M</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-60">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MCJd">
+									<input type="checkbox" id="filter-60">
+									<span>P</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Ocasião</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-36">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNiJd">
+									<input type="checkbox" id="filter-36">
+									<span>Batizados</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-39">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzOSJd">
+									<input type="checkbox" id="filter-39">
+									<span>Casamentos Civil</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-43">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MyJd">
+									<input type="checkbox" id="filter-43">
+									<span>Casamentos Diurno</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-45">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NSJd">
+									<input type="checkbox" id="filter-45">
+									<span>Casamentos na Cidade</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-38">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzOCJd">
+									<input type="checkbox" id="filter-38">
+									<span>Casamentos na Praia</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-44">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NCJd">
+									<input type="checkbox" id="filter-44">
+									<span>Casamentos no Campo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-31">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMSJd">
+									<input type="checkbox" id="filter-31">
+									<span>Convidadas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-55">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NSJd">
+									<input type="checkbox" id="filter-55">
+									<span>Debutantes</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-7">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3Il0%3D">
+									<input type="checkbox" id="filter-7">
+									<span>Eventos de Gala</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-42">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MiJd">
+									<input type="checkbox" id="filter-42">
+									<span>Festa Corporativa</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-6">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2Il0%3D">
+									<input type="checkbox" id="filter-6">
+									<span>Festas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-4">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0Il0%3D">
+									<input type="checkbox" id="filter-4">
+									<span>Formandas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-37">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNyJd">
+									<input type="checkbox" id="filter-37">
+									<span>Grávidas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-5">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1Il0%3D">
+									<input type="checkbox" id="filter-5">
+									<span>Madrinhas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-40">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MCJd">
+									<input type="checkbox" id="filter-40">
+									<span>Madrinhas Campo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-41">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0MSJd">
+									<input type="checkbox" id="filter-41">
+									<span>Madrinhas Praia</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-34">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNCJd">
+									<input type="checkbox" id="filter-34">
+									<span>Mães de Formando(a)</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-33">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMyJd">
+									<input type="checkbox" id="filter-33">
+									<span>Mães de Noivo(a)</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-63">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MyJd">
+									<input type="checkbox" id="filter-63">
+									<span>Missa de formatura</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-58">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1OCJd">
+									<input type="checkbox" id="filter-58">
+									<span>Noivas</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-62">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2MiJd">
+									<input type="checkbox" id="filter-62">
+									<span>Pré-wedding</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-35">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzNSJd">
+									<input type="checkbox" id="filter-35">
+									<span>Reveillon</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Novidades</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-13">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxMyJd">
+									<input type="checkbox" id="filter-13">
+									<span>Novidades</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Cor</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-68">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2OCJd">
+									<input type="checkbox" id="filter-68">
+									<span>Amarelo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-16">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNiJd">
+									<input type="checkbox" id="filter-16">
+									<span>Azul</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-50">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MCJd">
+									<input type="checkbox" id="filter-50">
+									<span>Azul Marinho</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-69">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2OSJd">
+									<input type="checkbox" id="filter-69">
+									<span>Azul Royal</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-52">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MiJd">
+									<input type="checkbox" id="filter-52">
+									<span>Azul Serenity</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-66">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NiJd">
+									<input type="checkbox" id="filter-66">
+									<span>Azul Tiffany</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-15">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNSJd">
+									<input type="checkbox" id="filter-15">
+									<span>Branco</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-74">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3NCJd">
+									<input type="checkbox" id="filter-74">
+									<span>Candy color</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-19">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxOSJd">
+									<input type="checkbox" id="filter-19">
+									<span>Chumbo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-20">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMCJd">
+									<input type="checkbox" id="filter-20">
+									<span>Cinza</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-51">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MSJd">
+									<input type="checkbox" id="filter-51">
+									<span>Coral</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-21">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMSJd">
+									<input type="checkbox" id="filter-21">
+									<span>Dourado</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-53">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1MyJd">
+									<input type="checkbox" id="filter-53">
+									<span>Estampado</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-65">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NSJd">
+									<input type="checkbox" id="filter-65">
+									<span>Fúcsia </span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-22">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMiJd">
+									<input type="checkbox" id="filter-22">
+									<span>Laranja</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-67">
+								<a href="https://2thedress.com.br/catalog?_f=WyI2NyJd">
+									<input type="checkbox" id="filter-67">
+									<span>Lavanda </span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-54">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NCJd">
+									<input type="checkbox" id="filter-54">
+									<span>Lilás</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-23">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyMyJd">
+									<input type="checkbox" id="filter-23">
+									<span>Marrom</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-24">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNCJd">
+									<input type="checkbox" id="filter-24">
+									<span>Marsala</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-25">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNSJd">
+									<input type="checkbox" id="filter-25">
+									<span>Nude</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-26">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNiJd">
+									<input type="checkbox" id="filter-26">
+									<span>Off-White</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-27">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyNyJd">
+									<input type="checkbox" id="filter-27">
+									<span>Prata</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-14">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNCJd">
+									<input type="checkbox" id="filter-14">
+									<span>Preto</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-73">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MyJd">
+									<input type="checkbox" id="filter-73">
+									<span>Rosa Chiclete</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-56">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1NiJd">
+									<input type="checkbox" id="filter-56">
+									<span>Rosa Pink</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-17">
+								<a href="https://2thedress.com.br/catalog?_f=WyIxNyJd">
+									<input type="checkbox" id="filter-17">
+									<span>Rosê</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-28">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyOCJd">
+									<input type="checkbox" id="filter-28">
+									<span>Roxo</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-59">
+								<a href="https://2thedress.com.br/catalog?_f=WyI1OSJd">
+									<input type="checkbox" id="filter-59">
+									<span>Terracota</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-29">
+								<a href="https://2thedress.com.br/catalog?_f=WyIyOSJd">
+									<input type="checkbox" id="filter-29">
+									<span>Verde</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-72">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MiJd">
+									<input type="checkbox" id="filter-72">
+									<span>Verde bandeira</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-71">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MSJd">
+									<input type="checkbox" id="filter-71">
+									<span>Verde menta</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-70">
+								<a href="https://2thedress.com.br/catalog?_f=WyI3MCJd">
+									<input type="checkbox" id="filter-70">
+									<span>Verde oliva</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-30">
+								<a href="https://2thedress.com.br/catalog?_f=WyIzMCJd">
+									<input type="checkbox" id="filter-30">
+									<span>Vermelho</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+						<li>Manga</li>
+			<ul class="nav">
+										<li style="display: block;" class="filter-item">
+							<label for="filter-46">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NiJd">
+									<input type="checkbox" id="filter-46">
+									<span>Manga curta</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-47">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0NyJd">
+									<input type="checkbox" id="filter-47">
+									<span>Manga longa</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-49">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0OSJd">
+									<input type="checkbox" id="filter-49">
+									<span>Ombro a ombro</span>
+								</a>
+							</label>
+						</li>
+										<li style="display: block;" class="filter-item">
+							<label for="filter-48">
+								<a href="https://2thedress.com.br/catalog?_f=WyI0OCJd">
+									<input type="checkbox" id="filter-48">
+									<span>Sem manga</span>
+								</a>
+							</label>
+						</li>
+							</ul>
+							</ul>
+			</div><div class="clear"></div></div><div id="text_655c964a2520f" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="color: #999999;"><a style="color: #999999;" href="https://2thedress.com.br/catalog"><span style="font-size: 10pt;">× Limpar todos os filtros</span></a></span></p></div><div class="clear"></div></div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div><style type="text/css">.act {
+  background-color: black !important;}
+
+
+.container-catalog .panel-body .col-md-12>div {
+  width: 100% !important;
+  text-align: center !important;}
+
+.container-catalog .pagination > li > span {
+    background-color: #fff;
+    border-color: #dadada !important;
+    color: #b1b1b1 !important;
+    border-radius: 0px !important;
+    padding: 7px 15px !important;
+}
+
+.container-catalog .pagination > li > a{
+    background-color: #fff;
+    border-color: #dadada !important;
+    color: #000000 !important;
+    border-radius: 0px !important;
+    padding: 7px 15px !important;
+}</style></div><div class="" style="clear:both;" name="" id="footer_655c964a253f4"><div class="container " name="Container_655c964a2551f" id="_5e4368e1dc701_1581476065"><div class=" col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_5e43689416eb5_1581475988"><img id="ResponsiveImage-hk2yils27o" class="col-xs-12 col-sm-6 col-md-4 col-xs-offset-0 col-sm-offset-3 col-md-offset-4" src="images/logo-preto.png" alt=""><div class="clear"></div></div><div class=" col-xs-12 col-sm-6 col-md-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_3686796379_1581476058"><div id="text_655c964a25a73" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 9pt; letter-spacing: 0.8em; color: #000000;">| <span style="color: #999999;">INSTITUCIONAL</span></span></p></div><div id="text_655c964a25b75" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/index">Home</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/sobre">Sobre</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/agende">Agende sua visita</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/blog">Blog</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/contato">Contato</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/contato#faq">Perguntas Frequentes</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/trabalhe-conosco">Trabalhe Conosco</a></span></p></div><div id="redesicon">
+  <a href="https://www.instagram.com/2thedress/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/2thedress/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+</div>
+
+<style>
+
+#redesicon a{
+  color: black;
+transition: .5s;
+font-size: 17px;
+  margin-right: 5px;
+}
+  
+  #redesicon .fa-facebook-f{
+font-size: 15px;}
+
+#redesicon a:hover{
+  color: #d3d4d6;
+transition: .5s;}
+</style><div class="clear"></div></div><div class=" col-xs-12 col-sm-6 col-md-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_1691730135_1608125161"><div id="text_655c964a26056" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 9pt; letter-spacing: 0.8em; color: #000000;">| <span style="color: #999999;">ALUGUE</span></span></p></div><div id="text_655c964a2613c" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog">Todos os vestidos</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog?f=WyI1Il0%3D">Madrinha</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog?f=WyI0Il0%3D">Formanda</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog?f=WyI2Il0%3D">Festas</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog?f=WyI2Il0%3D">Novidades</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog/bazar.4.html">Bazar</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog/vestido+longo.2.html">Vestido Longo</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog/vestido+curto.1.html">Vestido Curto</a></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="https://2thedress.com.br/catalog/vestido+midi.3.html">Vestido Midi</a></span></p></div><div class="clear"></div></div><div class=" col-xs-12 col-sm-6 col-md-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="_605109837_1581476720"><div id="text_655c964a2632d" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 9pt; letter-spacing: 1em; color: #000000;">| </span><span style="font-size: 9pt; letter-spacing: 0.8em; color: #000000;"><span style="color: #999999;">ATENDIMENTO</span></span></p></div><div id="text_655c964a26413" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 13pt; color: #000000;">COM HORA MARCADA</span></p>
+<p><span style="font-size: 13pt; color: #000000;">48 3207-9860<br>48 99663-4731<br></span></p>
+<p><span style="font-size: 13pt; color: #000000;"><a style="color: #000000;" href="/cdn-cgi/l/email-protection#7d1e1213091c09123d4f091518190f180e0e531e1210531f0f"><span class="__cf_email__" data-cfemail="ea8985849e8b9e85aad89e828f8e988f9999c4898587c48898">[email�&nbsp;protected]</span></a></span></p>
+<p><span style="font-size: 13pt; color: #000000;">Av. Pref. Osmar Cunha, 416, sala 203<br>Ed Koerich Empresarial Rio Branco<br>Florianópolis - SC</span></p>
+<p><span style="font-size: 17.3333px;">Seg-Sex 09:00-19:00<br>Sáb 09:00-16:00</span></p></div><div class="clear"></div></div><div class=" botao2 col-xs-11 col-sm-6 col-md-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="news"><div id="text_655c964a265d5" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 9pt; letter-spacing: 1em; color: #000000;">|�&nbsp;</span><span style="font-size: 9pt; letter-spacing: 0.8em; color: #000000;"><span style="color: #999999;">NEWSLETTER</span></span></p></div><div id="text_655c964a26681" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p><span style="font-size: 13pt; color: #000000;">Receba as novidades por e-mail</span></p></div><form id="Newsletter-hk2yils5dw" class="swformvalidator" method="POST" action="/catalog/signup" name="signups"><div class="form-group"><input type="text" class="form-control" id="nome_newsletter" name="signups[signup_name]" placeholder="Nome"></div><div class="form-group"><input type="email" class="form-control" id="email_newsletter" name="signups[signup_email_address]" placeholder="E-mail"></div><button type="submit" class="btn btn-default">Enviar</button></form><style type="text/css">#news input {
+  border-bottom: 1px solid black;
+border-radius: 0px;}</style><div class="clear"></div></div><div class="clear"></div></div><div class="container-fluid " name="Container_655c964a26965" id="_550869772_1588602166"><div class="container " name="Container_655c964a26a95" id="_134810498_1588602166"><div id="text_655c964a26bd9" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p style="text-align: center;"><span style="color: #999999; font-size: 12pt;">Criado pela <a style="color: #999999;" href="https://highsales.digital" target="_blank" rel="noopener">Agência de Marketing Digital</a> | Powered by <img src="images/agencia-de-marketing-digital.svg" alt="High Sales" width="65"></span></p></div><div class="clear"></div></div><div class="clear"></div></div><div class="flex bottomMenu col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0" id="iconwhat"><a href="https://api.whatsapp.com/send?phone=5548996634731" target="_blank"><div id="text_655c964a27055" class="col-xs-12 col-sm-12 col-md-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-0"><p style="text-align: center; line-height: 1;"><span style="color: #ffffff;"><strong><span style="font-size: 12pt;">PRECISA DE AJUDA?</span></strong></span><br><span style="font-size: 13pt; color: #ffffff; letter-spacing: 1px;">Fale com a gente!</span></p></div></a><div class="clear"></div></div><style type="text/css">#iconwhat {
+	position: fixed;
+    bottom: 10px;
+    right: -180px;
+    width: 180px;
+    z-index: 1020;
+    height: auto;
+    border: none;
+    border-radius: 600px 600px 0;
+transition: 1s;
+    box-shadow: 0px 0px 12px 0px #4c423670;}
+
+#iconwhat:hover {
+  background-color: #9f7746;
+transition: 1s;}</style></div></div><div class="clear"></div><script data-cfasync="false" src="js/email-decode.min.js"></script>
+			</body></html>
